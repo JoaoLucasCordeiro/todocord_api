@@ -21,7 +21,7 @@ app.post("/tasks", async (req, res) => {
   }
 });
 
-// listando todas as tasks
+// rota para listar todas as tasks
 app.get("/tasks", async (req, res) => {
   try {
     const task = await taskModel.find({});
@@ -31,7 +31,7 @@ app.get("/tasks", async (req, res) => {
   }
 });
 
-// listando task por id
+// rota para listar task por id
 app.get("/tasks/:id", async (req, res) => {
   try {
     const id = req.params.id;
@@ -42,7 +42,7 @@ app.get("/tasks/:id", async (req, res) => {
   }
 });
 
-// atualizar uma task por id
+// rota para listar atualizar uma task por id
 app.patch("/tasks/:id", async (req, res) => {
   try {
     const id = req.params.id;
@@ -53,7 +53,7 @@ app.patch("/tasks/:id", async (req, res) => {
   }
 });
 
-// deletar uma task por id
+// rota para listar deletar uma task por id
 app.delete("/tasks/:id", async (req, res) => {
   try {
     const id = req.params.id;
